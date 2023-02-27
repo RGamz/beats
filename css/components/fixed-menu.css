@@ -5,7 +5,7 @@
   z-index: 100; }
 
 .fixed-menu__item {
-  margin-bottom: 6px; }
+  margin-bottom: 0.375rem; }
   .fixed-menu__item--active .fixed-menu__link {
     border-color: #E01F3D; }
     .fixed-menu__item--active .fixed-menu__link::before {
@@ -14,18 +14,18 @@
     margin-bottom: 0; }
 
 .fixed-menu__link {
-  width: 16px;
-  height: 16px;
+  width: 1rem;
+  height: 1rem;
   border-radius: 50%;
-  border: 1px solid transparent;
+  border: 0.0625rem solid transparent;
   display: block;
   position: relative; }
   .fixed-menu__link::before {
     position: absolute;
     content: "";
     display: block;
-    width: 9px;
-    height: 9px;
+    width: 0.5625rem;
+    height: 0.5625rem;
     border-radius: 50%;
     background: #888888;
     top: 50%;

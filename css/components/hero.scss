@@ -1,7 +1,7 @@
 .hero {
     background-color: $grey;
     height: 100vh;
-    min-height: 650px;
+    min-height: 40.625rem;
 }
 
 .hero__title-section {
@@ -9,29 +9,29 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-bottom: 70px;
+    margin-bottom: 4.375rem;
 }
 
 h1 {
     font-family: 'Play';
     font-style: normal;
     font-weight: 700;
-    font-size: 48px;
-    line-height: 52px;
+    font-size: 3rem;
+    line-height: 3.25rem;
     text-transform: uppercase;
 }
 
 .hero__main-title {
-    max-width: 400px;
-    margin-bottom: 22px;
+    max-width: 25rem;
+    margin-bottom: 1.375rem;
 }
 
 .hero__title-desc {
     font-family: 'Alegreya Sans';
     font-style: normal;
     font-weight: 400;
-    font-size: 21px;
-    line-height: 25px;
-    max-width: 400px;
-    margin-bottom: 36px;
+    font-size: 1.3125rem;
+    line-height: 1.5625rem;
+    max-width: 25rem;
+    margin-bottom: 2.25rem;
 }

@@ -14,7 +14,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-right: 4px;
+    margin-right: 0.25rem;
     position: relative;
 
     &:last-child {
@@ -23,12 +23,12 @@
 }
 
 .feature__icon {
-    height: 38px;
-    width: 38px;
-    margin-right: 12px;
+    height: 2.375rem;
+    width: 2.375rem;
+    margin-right: 0.75rem;
 }
 
 .feature__text {
-    line-height: 18px;
-    max-width: 115px;
+    line-height: 1.125rem;
+    max-width: 7.1875rem;
 }

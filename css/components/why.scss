@@ -6,7 +6,7 @@
         content: url("./../../images/triangle_why.png");
         position: absolute;
         left: 5%;
-        bottom: -25px;
+        bottom: -1.5625rem;
     }
 }
 
@@ -17,16 +17,16 @@
 }
 
 .why__header {
-    margin-top: 50px;
-    margin-bottom: 62px;
+    margin-top: 3.125rem;
+    margin-bottom: 3.875rem;
 }
 
 .why__header-main {
-    margin-bottom: 18px;
+    margin-bottom: 1.125rem;
 }
 
 .why__header-desc {
-    max-width: 490px;
+    max-width: 30.625rem;
 }
 
 .why__features-list {
@@ -39,15 +39,15 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 320px;
-    padding: 0 35px;
+    width: 20rem;
+    padding: 0 2.1875rem;
     position: relative;
 
     &::before {
         position: absolute;
         content: url("../images/why_bubble.png");
-        top: 50px;
-        right: 0px;
+        top: 3.125rem;
+        right: 0;
         transform: translatex(50%);
     }
 
@@ -61,25 +61,25 @@
 
 .why__features-img {
     background-color: $grey;
-    height: 128px;
-    width: 128px;
+    height: 8rem;
+    width: 8rem;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 24px;
+    margin-bottom: 1.5rem;
 }
 
 .why__features-icon {
-    height: 60px;
+    height: 3.75rem;
 }
 
 .why__features-header {
-    margin-bottom: 7px;
+    margin-bottom: 0.4375rem;
 }
 
 .why__features-sep {
-    width: 70px;
+    width: 4.375rem;
     margin-top: 5%;
 }
 

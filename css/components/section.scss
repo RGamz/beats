@@ -1,7 +1,7 @@
 .section {
     width: $containerWidth;
     margin: 0 auto;
-    padding: 80px 80px;
+    padding: 5rem 5rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -12,8 +12,8 @@ h2 {
     font-family: 'Play';
     font-style: normal;
     font-weight: 700;
-    font-size: 48px;
-    line-height: 52px;
+    font-size: 3rem;
+    line-height: 3.25rem;
     text-transform: uppercase;
 }
 
@@ -21,8 +21,8 @@ h3 {
     font-family: 'Play';
     font-style: normal;
     font-weight: 700;
-    font-size: 24px;
-    line-height: 28px;
+    font-size: 1.5rem;
+    line-height: 1.75rem;
 }
 
 .section__header {

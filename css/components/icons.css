@@ -1,0 +1,28 @@
+.hero__icons-section {
+  display: flex;
+  flex-direction: row; }
+
+.features__list {
+  display: flex;
+  flex-direction: row;
+  align-items: center; }
+
+.features__item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-right: 4px;
+  position: relative; }
+  .features__item:last-child {
+    margin-right: 0; }
+
+.feature__icon {
+  height: 38px;
+  width: 38px;
+  margin-right: 12px; }
+
+.feature__text {
+  line-height: 18px;
+  max-width: 115px; }
+
+/*# sourceMappingURL=icons.css.map */

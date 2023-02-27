@@ -1,0 +1,85 @@
+.section__why {
+    position: relative;
+    height: 100vh;
+
+    &::after {
+        content: url("./../../images/triangle_why.png");
+        position: absolute;
+        left: 5%;
+        bottom: -25px;
+    }
+}
+
+.why__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.why__header {
+    margin-top: 50px;
+    margin-bottom: 62px;
+}
+
+.why__header-main {
+    margin-bottom: 18px;
+}
+
+.why__header-desc {
+    max-width: 490px;
+}
+
+.why__features-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.why__features-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 320px;
+    padding: 0 35px;
+    position: relative;
+
+    &::before {
+        position: absolute;
+        content: url("../images/why_bubble.png");
+        top: 50px;
+        right: 0px;
+        transform: translatex(50%);
+    }
+
+    &:last-child {
+
+        &::before {
+            display: none;
+        }
+    }
+}
+
+.why__features-img {
+    background-color: $grey;
+    height: 128px;
+    width: 128px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 24px;
+}
+
+.why__features-icon {
+    height: 60px;
+}
+
+.why__features-header {
+    margin-bottom: 7px;
+}
+
+.why__features-sep {
+    width: 70px;
+    margin-top: 5%;
+}
+

@@ -1,0 +1,82 @@
+html, body {
+    height:100%
+};
+
+body {
+    font-size: $baseFontSize;
+    font-family: "Play", Arial, Helvetica, sans-serif;
+    font-style: normal;
+    color: #292929;
+    line-height: 1.42;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+    position: relative;
+}
+
+.wrapper {
+    position: relative;
+    width: 100%;
+    min-width: $containerWidth + 20px;
+    min-height: 100%;
+    overflow: hidden;
+}
+
+.hero__container {
+    width: $containerWidth;
+    height: 100%;
+    margin: 0 auto;
+    background: url("../images/product1.png") left 90% bottom 20% no-repeat;
+    background-size: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 100px 66px 80px;
+    position: relative;
+
+    &::before {
+        content: url("../images/rectangle_hero.png");
+        position: absolute;
+        right: 10%;
+        bottom: -25px;
+    }
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+    font-weight: normal;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    li {
+        list-style: none;
+    }
+}
+
+p {
+    padding: 0;
+    margin: 0;
+}
+
+footer {
+    position: relative;
+    width: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    color: inherit;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}

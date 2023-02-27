@@ -1,0 +1,98 @@
+.section__forms {
+  background-color: #313131;
+  color: #FFFFFF;
+  display: flex;
+  height: 100vh;
+  width: 100vw; }
+
+.form {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row; }
+
+.forms__header-main {
+  margin-bottom: 60px; }
+
+.form__col {
+  flex: 1;
+  margin-right: 27px; }
+  .form__col:last-child {
+    margin-right: 0; }
+
+.form__row {
+  display: flex;
+  margin-bottom: 11px; }
+  .form__row:last-child {
+    margin-bottom: 0; }
+
+.form__block {
+  flex: 1;
+  margin-right: 17px; }
+  .form__block:last-child {
+    margin-right: 0; }
+
+.form__title {
+  text-align: left; }
+
+.form__input {
+  width: 100%;
+  height: 58px;
+  border: none;
+  padding: 18px 11px;
+  border-radius: 4px;
+  border: solid 3px transparent; }
+  .form__input--textarea {
+    height: 150px;
+    resize: none;
+    margin-bottom: 10px; }
+  .form__input:focus {
+    border: solid 3px #E01F3D;
+    outline: none; }
+
+.form__controls {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 19px; }
+
+.form__controls-checkbox {
+  margin-bottom: 50px; }
+
+.radio {
+  display: flex;
+  margin-right: 16px;
+  cursor: pointer;
+  user-select: none; }
+  .radio--checkbox .radio__visible {
+    border-radius: 0; }
+    .radio--checkbox .radio__visible::before {
+      background: url(../../images/tick.png) center center no-repeat; }
+
+.radio__elem {
+  display: none; }
+  .radio__elem:checked ~ .radio__visible::before {
+    display: block; }
+
+.radio__visible {
+  width: 25px;
+  height: 25px;
+  position: relative;
+  border-radius: 50%;
+  background: #FFFFFF;
+  margin-right: 10px; }
+  .radio__visible::before {
+    content: "";
+    width: 13px;
+    height: 13px;
+    background: #E01F3D;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none; }
+
+.form__buttons {
+  text-align: left; }
+
+/*# sourceMappingURL=forms.css.map */

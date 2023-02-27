@@ -1,0 +1,18 @@
+.btn {
+  font-weight: 700;
+  line-height: 18px;
+  text-align: center;
+  color: #FFFFFF;
+  background: #E01F3D;
+  border-radius: 100px;
+  padding: 18px 41px;
+  border: none;
+  max-width: 160px;
+  text-decoration: none;
+  cursor: pointer; }
+
+.btn__transparent {
+  background: none;
+  padding: 18px 10px; }
+
+/*# sourceMappingURL=btn.css.map */

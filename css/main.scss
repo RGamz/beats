@@ -1,0 +1,22 @@
+//normalize
+@import "https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css";
+
+//variables
+$containerWidth: 1100px;
+$baseFontSize: 16px;
+
+//colors
+$grey:#F5F5F5;
+
+//setups
+@import "https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;700&family=Play:wght@400;700&display=swap";
+@import "layout";
+@import "./components/hero";
+@import "./components/header";
+@import "./components/icons";
+@import "./components/btn";
+@import "./components/section.scss";
+@import "./components/why.scss";
+@import "./components/reviews.scss";
+@import "./components/forms.scss";
+@import "./components/fixed-menu.scss";

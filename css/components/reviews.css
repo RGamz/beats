@@ -7,7 +7,7 @@
   flex-direction: column;
   justify-content: space-between; }
   .reviews__wrapper:after {
-    content: url("../../images/circle_review.png");
+    content: url("../images/circle_review.png");
     position: absolute;
     left: 5%;
     bottom: -1.5625rem; }

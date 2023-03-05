@@ -814,7 +814,6 @@ img {
       justify-content: center; } }
 
 .social-media__item {
-  padding: 0.625rem;
   margin-right: 0.5625rem; }
   .social-media__item:last-child {
     margin-right: 0; }

@@ -10,6 +10,10 @@
     max-width: 10rem;
     text-decoration: none;
     cursor: pointer;
+
+    &:hover {
+        background: #CA1B36;
+    }
 }
 
 .btn__transparent {

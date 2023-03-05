@@ -52,8 +52,9 @@
 }
 
 .media__icon {
-    width: 24px;
-    height: 24px;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
     fill: #B3B3B3;
 
     &:hover {

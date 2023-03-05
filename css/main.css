@@ -322,6 +322,8 @@ img {
   max-width: 10rem;
   text-decoration: none;
   cursor: pointer; }
+  .btn:hover {
+    background: #CA1B36; }
 
 .btn__transparent {
   background: none;
@@ -818,8 +820,9 @@ img {
     margin-right: 0; }
 
 .media__icon {
-  width: 24px;
-  height: 24px;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
   fill: #B3B3B3; }
   .media__icon:hover {
     fill: black; }

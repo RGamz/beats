@@ -1,11 +1,24 @@
 .footer {
-    display: flex;flex-direction: row;
+    display: flex;
+    flex-direction: row;
     justify-content: space-between;
     padding: 1.25rem 3.375rem 1.25rem 5.375rem;
-    font-size: 1.125rem;
+
+    @include phones {
+        flex-direction: column;
+        height: 15vh;
+        padding: 1rem 3.375rem;
+    }
 }
 
 .footer__contact {
     margin-bottom: 0.1875;
 }
 
+.footer__address {
+    @include phones {
+        text-align: center;
+        margin-bottom: 5px;
+    }
+    
+}

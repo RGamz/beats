@@ -3,75 +3,98 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @include phones {
+        justify-content: center;
+    }
 }
 
 
+// .social-media__item {
+//     width: 2.25rem;
+//     height: 2.25rem;
+//     background-color: #ccc;
+//     padding: 0.625rem;
+//     border-radius: 50%;
+//     position: relative;
+//     margin-right: 0.5625rem;
+
+//     &:last-child {
+//         margin-right: 0;
+//     }
+//  }
+
+//  .social-media__link {
+//     width: 2.25rem;
+//     height: 2.25rem;
+//     padding: 0.625rem;
+//     border-radius: 50%;
+//     position: relative;
+
+//     &::after {
+//         display: block;
+//         position: absolute;
+//         top: 50%;
+//         left: 50%;
+//         transform: translate(-50%, -50%);
+//         width: 2.25rem;
+//         height: 2.25rem;
+//     }
+// }
+
 .social-media__item {
-    width: 2.25rem;
-    height: 2.25rem;
-    background-color: #ccc;
     padding: 0.625rem;
-    border-radius: 50%;
-    position: relative;
     margin-right: 0.5625rem;
 
     &:last-child {
         margin-right: 0;
     }
- }
+}
 
- .social-media__link {
-    width: 2.25rem;
-    height: 2.25rem;
-    padding: 0.625rem;
-    border-radius: 50%;
-    position: relative;
+.media__icon {
+    width: 24px;
+    height: 24px;
+    fill: #B3B3B3;
 
-    &::after {
-        display: block;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 2.25rem;
-        height: 2.25rem;
+    &:hover {
+        fill: black;
     }
 }
 
 
-.bg-vk {
-    width: 2.25rem; height: 2.25rem;
-    background: url("../images/social_sprite.png") -4.125rem -7.625rem;
-}
+// .bg-vk {
+//     width: 2.25rem; height: 2.25rem;
+//     background: url("../images/social_sprite.png") -4.125rem -7.625rem;
+// }
 
-.bg-vk:hover {
-    background: url("../images/social_sprite.png") -0.625rem -7.625rem;
-}
+// .bg-vk:hover {
+//     background: url("../images/social_sprite.png") -0.625rem -7.625rem;
+// }
 
-.bg-f {
-    width: 2.25rem; height: 2.25rem;
-    background: url("../images/social_sprite.png") -4.125rem -0.625rem;
-}
+// .bg-f {
+//     width: 2.25rem; height: 2.25rem;
+//     background: url("../images/social_sprite.png") -4.125rem -0.625rem;
+// }
 
-.bg-f:hover {
-    background: url("../images/social_sprite.png") -0.625rem -0.625rem;
-}
+// .bg-f:hover {
+//     background: url("../images/social_sprite.png") -0.625rem -0.625rem;
+// }
 
-.bg-in {
-    width: 2.25rem; height: 2.25rem;
-    background: url("../images/social_sprite.png") -4.125rem -4.125rem;
-}
+// .bg-in {
+//     width: 2.25rem; height: 2.25rem;
+//     background: url("../images/social_sprite.png") -4.125rem -4.125rem;
+// }
 
-.bg-in:hover {
-    background: url("../images/social_sprite.png") -0.625rem -4.125rem;
-}
+// .bg-in:hover {
+//     background: url("../images/social_sprite.png") -0.625rem -4.125rem;
+// }
 
-.bg-telegram {
-    width: 2.25rem; height: 2.25rem;
-    background: url("../images/social_sprite.png") -7.625rem -4.125rem;
-}
+// .bg-telegram {
+//     width: 2.25rem; height: 2.25rem;
+//     background: url("../images/social_sprite.png") -7.625rem -4.125rem;
+// }
 
-.bg-telegram:hover {
-    background: url("../images/social_sprite.png") -7.625rem -0.625rem;
-}
+// .bg-telegram:hover {
+//     background: url("../images/social_sprite.png") -7.625rem -0.625rem;
+// }
 

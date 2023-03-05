@@ -3,6 +3,13 @@
     top: 40%;
     right: 5%;
     z-index: 100;
+
+    @include tablets {
+        display: none;
+    }
+    @include phones {
+        display: none;
+    }
 }
 
 .fixed-menu__item {

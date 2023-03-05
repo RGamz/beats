@@ -1,6 +1,15 @@
 .section__why {
+    width: 95%;
     position: relative;
     height: 100vh;
+
+    @include tablets {
+        justify-content: center;
+    }
+
+    @include phones {
+        justify-content: center;
+    }
 
     &::after {
         content: url("../images/triangle_why.png");
@@ -19,6 +28,11 @@
 .why__header {
     margin-top: 3.125rem;
     margin-bottom: 3.875rem;
+
+    @include phones {
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
 }
 
 .why__header-main {
@@ -33,6 +47,10 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+
+    @include phones {
+        flex-direction: column;
+    }
 }
 
 .why__features-item {
@@ -42,6 +60,29 @@
     width: 20rem;
     padding: 0 2.1875rem;
     position: relative;
+
+    @include tablets {
+        padding: 0 0;
+        width: auto;
+    }
+
+    @include phones {
+        padding: 0 0;
+        width: auto;
+        flex-direction: row;
+        margin-bottom: 5px;
+    }
+    
+
+    &::before {
+        @include tablets {
+            display: none;
+        }
+
+        @include phones {
+            display: none;
+        }
+    }
 
     &::before {
         position: absolute;
@@ -60,6 +101,20 @@
 }
 
 .why__features-img {
+    fill: black;
+    width: 60px;
+    height: 60px;
+}
+
+.why__features-desc {
+    max-width: 300px;
+
+    @include phones {
+        width: 60vw;
+    }
+}
+
+.why__features-img {
     background-color: $grey;
     height: 8rem;
     width: 8rem;
@@ -68,10 +123,21 @@
     align-items: center;
     justify-content: center;
     margin-bottom: 1.5rem;
+    
+    @include phones {
+        flex: 1;
+        height: 6rem;
+        width: 6rem;
+        margin-right: 7px;
+    }
 }
 
 .why__features-icon {
     height: 3.75rem;
+
+    @include phones {
+        height: 3rem;
+    }
 }
 
 .why__features-header {

@@ -16,3 +16,10 @@
     background: none;
     padding: 1.125rem 0.625rem;
 }
+
+.features__btn {
+    @include phones {
+        font-size: 19px;
+        padding: 21px 36px;
+    }
+}

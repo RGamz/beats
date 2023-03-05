@@ -2,6 +2,14 @@
 .hero__icons-section {
     display: flex;
     flex-direction: row;
+
+    @include tablets {
+        display: none;
+    }
+
+    @include phones {
+        display: none;
+    }
 }
 
 .features__list {
@@ -23,8 +31,11 @@
 }
 
 .feature__icon {
-    height: 2.375rem;
-    width: 2.375rem;
+    // height: 2.375rem;
+    // width: 2.375rem;
+    height: 39px;
+    width: 39px;
+    fill: black;
     margin-right: 0.75rem;
 }
 

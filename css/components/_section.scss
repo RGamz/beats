@@ -6,24 +6,16 @@
     flex-direction: column;
     justify-content: space-between;
     text-align: center;
+
+    @include tablets {
+        padding: 5rem 0rem;
+    }
+
+    @include phones {
+        padding: 5rem 0rem;
+    }
 }
 
-h2 {
-    font-family: 'Play';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 3rem;
-    line-height: 3.25rem;
-    text-transform: uppercase;
-}
-
-h3 {
-    font-family: 'Play';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 1.5rem;
-    line-height: 1.75rem;
-}
 
 .section__header {
     display: flex;

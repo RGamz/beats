@@ -5,14 +5,21 @@
 $baseFontSize: 16px;
 $containerWidth: 68.75rem;
 
+//breakpoints
+
+$tablet:768px;
+$phone:480px;
+
 //colors
 $grey:#F5F5F5;
 
 //setups
 @import "https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;700&family=Play:wght@400;700&display=swap";
+@import "./media_requests";
 @import "layout";
 @import "./components/hero";
 @import "./components/header";
+@import "./components/burger";
 @import "./components/icons";
 @import "./components/btn";
 @import "./components/section";
@@ -20,7 +27,6 @@ $grey:#F5F5F5;
 @import "./components/reviews";
 @import "./components/forms";
 @import "./components/fixed-menu";
-@import "./media_requests";
 @import "./components/map";
 @import "./components/footer";
 @import "./components/socials";

@@ -1,11 +1,26 @@
 
-
 .section__forms {
     background-color: #313131;
     color: #FFFFFF;
     display: flex;
     height: 100vh;
     width: 100vw;
+
+    @include tablets {
+        // width: 100vw;
+        padding: 0rem 5rem;
+        margin: 0 auto;
+    }
+
+    @include phones {
+        // width: 100vw;
+        padding: 0rem 1rem;
+        margin: 0 auto;
+    }
+}
+
+.forms__wrapper {
+    margin: 0 auto;
 }
 
 .form {
@@ -13,10 +28,20 @@
     height: 100%;
     display: flex;
     flex-direction: row;
+
+    @include tablets {
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    @include phones {
+        flex-direction: column;
+        margin: 0 auto;
+    }
 }
 
-.forms__header-main {
-    margin-bottom: 3.75rem;
+.forms__header {
+    padding: 2rem 0rem;
 }
 
 .form__col {
@@ -25,6 +50,15 @@
     &:last-child {
         margin-right: 0;
     }
+
+    @include tablets {
+        margin-right: 0;
+    }
+
+    @include phones {
+        margin-right: 0;
+    }
+    
 }
 
 .form__row {
@@ -65,6 +99,14 @@
     &:focus {
         border: solid 0.1875rem #E01F3D;
         outline: none;
+    }
+
+    @include tablets {
+        height: 36px;
+    }
+
+    @include phones {
+        height: 36px;
     }
 }
 
@@ -127,6 +169,17 @@
     }
 }
 
+.radio__title {
+    margin-bottom: 10px;
+}
+
 .form__buttons {
     text-align: left;
+
+    @include tablets {
+        text-align: center;
+    }
+    @include phones {
+        text-align: center;
+    }
 }

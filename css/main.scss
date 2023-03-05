@@ -5,6 +5,12 @@
 $baseFontSize: 16px;
 $containerWidth: 68.75rem;
 
+//functions 
+
+@function rem($px) {
+    @return $px / $baseFontSize + 0rem
+}
+
 //breakpoints
 
 $tablet:768px;

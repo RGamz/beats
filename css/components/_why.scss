@@ -70,7 +70,7 @@
         padding: 0 0;
         width: auto;
         flex-direction: row;
-        margin-bottom: 5px;
+        margin-bottom: rem(5px);
     }
     
 
@@ -102,12 +102,12 @@
 
 // .why__features-img {
 //     fill: black;
-//     width: 60px;
-//     height: 60px;
+//     width: rem(60px);
+//     height: rem(60px);
 // }
 
 .why__features-desc {
-    max-width: 300px;
+    max-width: rem(300px);
 
     @include phones {
         width: 60vw;
@@ -128,7 +128,7 @@
         flex: 1;
         height: 6rem;
         width: 6rem;
-        margin-right: 7px;
+        margin-right: rem(7px);
     }
 }
 

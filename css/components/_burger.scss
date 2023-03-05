@@ -1,6 +1,6 @@
 
 .burger {
-    width: 26px;
+    width: rem(26px);
     display: inline-flex;
     flex-direction: column;
     justify-content: space-between;
@@ -10,9 +10,9 @@
 .burger__line {
     display: block;
     background: #292929;
-    height: 4px;
-    border-radius: 10px;
-    margin-bottom: 5px;
+    height: rem(4px);
+    border-radius: rem(10px);
+    margin-bottom: rem(5px);
     display: none;
 
     @include tablets {

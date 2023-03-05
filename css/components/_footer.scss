@@ -18,7 +18,7 @@
 .footer__address {
     @include phones {
         text-align: center;
-        margin-bottom: 5px;
+        margin-bottom: rem(5px);
     }
     
 }

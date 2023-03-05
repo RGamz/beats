@@ -4,10 +4,6 @@
     .section__forms {display: none;}
  }
 
-@function rem($px) {
-    @return $px / $baseFontSize + 0rem
-}
-
 @mixin tablets {
     @media screen and (max-width: $tablet) {
         @content;

@@ -46,10 +46,10 @@
 
         &::before {
             background-image: url(/images/product1.png);
-            background-size: 323px 323px;
+            background-size: rem(323px) rem(323px);
             display: inline-block;
-            width: 323px; 
-            height: 323px;
+            width: rem(323px); 
+            height: rem(323px);
             content:"";
         }
     }
@@ -62,10 +62,10 @@
 
         &::before {
             background-image: url("/images/product1.png");
-            background-size: 300px 300px;
+            background-size: rem(300px) rem(300px);
             display: inline-block;
-            width: 300px; 
-            height: 300px;
+            width: rem(300px); 
+            height: rem(300px);
             content:"";
         }
     }
@@ -100,8 +100,8 @@
     }
 
     @include phones {
-        font-size: 18px;
-        line-height: 20px;
+        font-size: rem(18px);
+        line-height: rem(20px);
         margin-bottom: 1.25rem;
     }
 }

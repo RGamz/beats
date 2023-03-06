@@ -1,5 +1,5 @@
 .section__footer {
-    height: 100vh;
+    height: 100%;
     width: 100%;
     position: relative;
 }
@@ -9,10 +9,16 @@
     bottom:0;
     left:0;
     right:0;
+    height: 86px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     padding: 1.25rem 3.375rem 1rem 5.375rem;
+
+    @include phones {
+        height: 107px;
+    }
 
     @include phones {
         flex-direction: column;

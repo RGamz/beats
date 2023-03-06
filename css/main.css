@@ -30,8 +30,8 @@ body {
   position: relative;
   width: 100%;
   min-width: 0;
-  min-height: 100%;
-  overflow: hidden; }
+  height: 100%;
+  overflow-x: hidden; }
 
 .maincontent {
   width: 100%;
@@ -807,7 +807,7 @@ img {
   object-fit: cover; }
 
 .section__footer {
-  height: 100vh;
+  height: 100%;
   width: 100%;
   position: relative; }
 
@@ -816,10 +816,15 @@ img {
   bottom: 0;
   left: 0;
   right: 0;
+  height: 86px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   padding: 1.25rem 3.375rem 1rem 5.375rem; }
+  @media screen and (max-width: 480px) {
+    .footer {
+      height: 107px; } }
   @media screen and (max-width: 480px) {
     .footer {
       flex-direction: column;

@@ -1,7 +1,7 @@
 .section__why {
-    width: 95%;
+    width: 100%;
     position: relative;
-    height: 100vh;
+    height: 100%;
 
     @include tablets {
         justify-content: center;
@@ -71,6 +71,10 @@
         width: auto;
         flex-direction: row;
         margin-bottom: rem(5px);
+
+        &:last-child {
+            margin-bottom: 0;
+        }
     }
     
 
@@ -99,12 +103,6 @@
         }
     }
 }
-
-// .why__features-img {
-//     fill: black;
-//     width: rem(60px);
-//     height: rem(60px);
-// }
 
 .why__features-desc {
     max-width: rem(300px);
@@ -149,3 +147,8 @@
     margin-top: 5%;
 }
 
+.why__features-text {
+    @include phones {
+        text-align: left;
+    }
+}

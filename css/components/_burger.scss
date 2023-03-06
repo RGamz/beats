@@ -1,9 +1,13 @@
 
 .burger {
     width: rem(26px);
+    top: 5%;
+    right: 5%;
+    z-index: 100;
     display: inline-flex;
     flex-direction: column;
     justify-content: space-between;
+    position: fixed;
 
 }
 

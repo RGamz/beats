@@ -3,8 +3,8 @@
     background-color: #313131;
     color: #FFFFFF;
     display: flex;
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
 
     @include tablets {
         // width: 100vw;
@@ -103,10 +103,18 @@
 
     @include tablets {
         height: rem(36px);
+
+        &--textarea {
+            height: rem(82px);
+        }
     }
 
     @include phones {
         height: rem(36px);
+
+        &--textarea {
+            height: rem(82px);
+        }
     }
 }
 
@@ -117,7 +125,7 @@
 }
 
 .form__controls-checkbox {
-    margin-bottom: 3.125rem;
+    margin-bottom: 2.5rem;
 }
 
 .radio {
@@ -175,6 +183,7 @@
 
 .form__buttons {
     text-align: left;
+    margin-bottom: 5rem;
 
     @include tablets {
         text-align: center;

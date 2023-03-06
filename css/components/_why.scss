@@ -140,6 +140,10 @@
 
 .why__features-header {
     margin-bottom: 0.4375rem;
+
+    @include phones {
+        text-align: left;
+    }
 }
 
 .why__features-sep {

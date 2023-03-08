@@ -419,7 +419,7 @@ img {
       padding: 0 0;
       width: auto;
       flex-direction: row;
-      margin-bottom: 0.3125rem; }
+      margin-bottom: 1.25rem; }
       .why__features-item:last-child {
         margin-bottom: 0; } }
   @media screen and (max-width: 768px) {
@@ -457,7 +457,8 @@ img {
       flex: 1;
       height: 6rem;
       width: 6rem;
-      margin-right: 0.4375rem; } }
+      margin-right: 0.4375rem;
+      margin-bottom: 0; } }
 
 .why__features-icon {
   height: 3.75rem; }
@@ -513,7 +514,8 @@ img {
     margin-bottom: 1.875rem; } }
 @media screen and (max-width: 480px) {
   .reviews__header-main {
-    margin-bottom: 1.875rem; } }
+    margin-top: 20px;
+    margin-bottom: 0.9375rem; } }
 
 .reviews__block {
   padding: 2.1875rem 2.625rem;
@@ -538,11 +540,11 @@ img {
   margin-right: 2.5rem; }
   @media screen and (max-width: 768px) {
     .review__avatar {
-      padding: 3.125rem 0 1.875rem 0;
+      padding: 1.25rem 0 1.875rem 0;
       margin-right: 0; } }
   @media screen and (max-width: 480px) {
     .review__avatar {
-      padding: 3.125rem 0 1.875rem 0;
+      padding: 1.25rem 0 1.875rem 0;
       margin-right: 0; } }
 
 .review__avatar-img {
@@ -572,6 +574,12 @@ img {
 
 .review__header {
   margin-top: 1.25rem; }
+  @media screen and (max-width: 768px) {
+    .review__header {
+      margin-top: 0; } }
+  @media screen and (max-width: 480px) {
+    .review__header {
+      margin-top: 0; } }
 
 @media screen and (max-width: 768px) {
   .review__text {
@@ -642,6 +650,9 @@ img {
 
 .forms__header {
   padding: 2rem 0rem; }
+  @media screen and (max-width: 768px) {
+    .forms__header {
+      padding: 1.5rem 0rem; } }
 
 .form__col {
   flex: 1;
@@ -699,9 +710,15 @@ img {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 1.1875rem; }
+  @media screen and (max-width: 768px) {
+    .form__controls {
+      margin-bottom: 0.8rem; } }
 
 .form__controls-checkbox {
   margin-bottom: 2.5rem; }
+  @media screen and (max-width: 768px) {
+    .form__controls-checkbox {
+      margin-bottom: 1rem; } }
 
 .radio {
   display: flex;
@@ -745,10 +762,12 @@ img {
   margin-bottom: 5rem; }
   @media screen and (max-width: 768px) {
     .form__buttons {
-      text-align: center; } }
+      text-align: center;
+      margin-bottom: 2rem; } }
   @media screen and (max-width: 480px) {
     .form__buttons {
-      text-align: center; } }
+      text-align: center;
+      margin-bottom: 2rem; } }
 
 .fixed-menu {
   position: fixed;

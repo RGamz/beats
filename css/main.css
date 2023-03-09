@@ -537,7 +537,9 @@ img {
       align-items: center; } }
 
 .review__avatar {
-  margin-right: 2.5rem; }
+  margin-right: 2.5rem;
+  max-height: 260px;
+  flex-shrink: 0; }
   @media screen and (max-width: 768px) {
     .review__avatar {
       padding: 1.25rem 0 1.875rem 0;
@@ -548,12 +550,13 @@ img {
       margin-right: 0; } }
 
 .review__avatar-img {
-  width: 347px;
-  height: 264px; }
+  width: 100%;
+  height: 100%; }
   @media screen and (max-width: 768px) {
     .review__avatar-img {
       width: 130px;
-      height: 130px; } }
+      height: 130px;
+      margin-right: 0; } }
   @media screen and (max-width: 480px) {
     .review__avatar-img {
       width: 130px;
@@ -832,10 +835,6 @@ img {
 
 .footer {
   position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 86px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -843,12 +842,8 @@ img {
   padding: 1.25rem 3.375rem 1rem 5.375rem; }
   @media screen and (max-width: 480px) {
     .footer {
-      height: 107px; } }
-  @media screen and (max-width: 480px) {
-    .footer {
       flex-direction: column;
       justify-content: center;
-      height: 150px;
       padding: 1rem 3.375rem; } }
 
 .footer__contacts {

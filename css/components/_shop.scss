@@ -4,6 +4,29 @@
     height: 100%;
     justify-content: center;
     padding: rem(60px);
+    position: relative;
+
+    @include tablets {
+        padding: rem(40px);
+    }
+
+    @include phones {
+        padding: rem(10px);
+    }
+}
+
+.shop__container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+    &:after {
+        content: url("../images/Rectangle-shop.jpg");
+        position: absolute;
+        right: 5%;
+        bottom: -1.5rem;
+    }
 }
 
 .shop__wrapper {
@@ -11,12 +34,34 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    position: relative;
+
+    @include tablets {
+        flex-direction: column;
+    }
+
+    @include phones {
+        flex-direction: column;
+    }
+
 }
 
 .shop__image {
     width: 35%;
-    margin-left: 5%;
     margin-right: rem(50px);
+    position: relative;
+
+    @include tablets {
+        width: 80%;
+        margin-bottom: rem(49px);
+        margin-right: 0;
+    }
+
+    @include phones {
+        width: 80%;
+        margin-bottom: rem(49px);
+        margin-right: 0;
+    }
 }
 
 .shop__image-img {
@@ -29,7 +74,27 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-right: 5%;
+    position: relative;
+
+    @include tablets {
+        width: 100%;
+        align-items: center;
+    }    
+
+    @include phones {
+        width: 100%;
+        align-items: center;
+    } 
+}
+
+.arrowLFT {
+    position: absolute;
+    margin-right: 85vw;
+}
+
+.arrowRGT {
+    position: absolute;
+    margin-left: 85vw;
 }
 
 .gear_block {
@@ -43,11 +108,31 @@
     text-align: left;
     text-transform: uppercase;
     margin-bottom: rem(24px);
+
+    @include tablets {
+        text-align: center;
+        font-size: 28px;
+        line-height: 32px;
+    }    
+
+    @include phones {
+        text-align: center;
+        font-size: 28px;
+        line-height: 32px;
+    } 
 }
 
 .product__descr {
     text-align: left;
     margin-bottom: rem(27px);
+
+    @include tablets {
+        text-align: center;
+    }    
+
+    @include phones {
+        text-align: center;
+    } 
 }
 
 .product__features {
@@ -64,6 +149,19 @@
     flex-direction: column;
     margin-right: rem(86px);
     text-align: left;
+
+    @include tablets {
+        width: 50%;
+        justify-content: space-between;
+        text-align: center;
+        margin-right: rem(10px);
+    }
+    @include phones {
+        width: 50%;
+        justify-content: space-between;
+        text-align: center;
+        margin-right: rem(10px);
+    }
 }
 
 .prod__feature-descr{
@@ -87,6 +185,14 @@
 
 .arrow {
     display: block;
+
+    @include tablets {
+        margin-top: -70%;
+    }    
+
+    @include phones {
+        margin-top: -80%;
+    } 
 }
 
 .arrow__svg {

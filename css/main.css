@@ -814,16 +814,13 @@ img {
     left: 50%;
     transform: translate(-50%, -50%); }
 
-.map__container {
+.section__map {
   width: 100vw;
   max-width: none;
   height: 91vh; }
   @media screen and (max-width: 480px) {
-    .map__container {
+    .section__map {
       height: 85vh; } }
-
-.section__map {
-  width: 100vw; }
 
 .map-img {
   height: 100%;
@@ -888,8 +885,8 @@ body {
   align-items: center;
   text-align: center;
   font-weight: 400;
-  font-size: 36px;
-  line-height: 72px;
+  font-size: 2.25rem;
+  line-height: 4.5rem;
   color: #FFFFFF;
   top: 0;
   left: 0;
@@ -907,14 +904,14 @@ body {
 .close__button {
   position: absolute;
   display: block;
-  top: 42px;
-  right: 42px;
-  width: 20px;
-  height: 20px; }
+  top: 2.625rem;
+  right: 2.625rem;
+  width: 1.25rem;
+  height: 1.25rem; }
 
 .close__button-svg {
   display: block;
-  width: 20px;
-  height: 20px; }
+  width: 1.25rem;
+  height: 1.25rem; }
 
 /*# sourceMappingURL=main.css.map */

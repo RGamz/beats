@@ -10,8 +10,8 @@ body {
     align-items: center;
     text-align: center;
     font-weight: 400;
-    font-size: 36px;
-    line-height: 72px;
+    font-size: rem(36px);
+    line-height: rem(72px);
     color: #FFFFFF;
     top: 0;
     left: 0;
@@ -32,14 +32,14 @@ body {
 .close__button {
     position: absolute;
     display: block;
-    top: 42px;
-    right: 42px;
-    width: 20px;
-    height: 20px;
+    top: rem(42px);
+    right: rem(42px);
+    width: rem(20px);
+    height: rem(20px);
 }
 
 .close__button-svg {
     display: block;
-    width: 20px;
-    height: 20px;
+    width: rem(20px);
+    height: rem(20px);
 }

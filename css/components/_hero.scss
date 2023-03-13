@@ -48,7 +48,7 @@
         flex: 1;
 
         &::before {
-            background-image: url(/images/product1.png);
+            background-image: url("../images/product1.png");
             background-size: rem(323px) rem(323px);
             display: inline-block;
             width: rem(323px); 
@@ -64,7 +64,7 @@
         flex: 1;
 
         &::before {
-            background-image: url("/images/product1.png");
+            background-image: url("../images/product1.png");
             background-size: rem(300px) rem(300px);
             display: inline-block;
             width: rem(300px); 

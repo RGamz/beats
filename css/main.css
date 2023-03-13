@@ -374,7 +374,8 @@ img {
     content: url("../images/triangle_why.png");
     position: absolute;
     left: 5%;
-    bottom: -1.5625rem; }
+    bottom: -1.5625rem;
+    z-index: 2; }
 
 .why__wrapper {
   display: flex;
@@ -892,7 +893,8 @@ img {
   width: 100%;
   height: 100%;
   display: flex;
-  align-items: center; }
+  align-items: center;
+  justify-content: center; }
   .shop__container:after {
     content: url("../images/Rectangle-shop.jpg");
     position: absolute;
@@ -911,6 +913,17 @@ img {
   @media screen and (max-width: 480px) {
     .shop__wrapper {
       flex-direction: column; } }
+
+.arrows {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  width: 95%; }
+
+.arrow__svg {
+  display: block;
+  width: 0.9375rem;
+  height: 1.8125rem; }
 
 .shop__image {
   width: 35%;
@@ -945,14 +958,6 @@ img {
     .shop__description {
       width: 100%;
       align-items: center; } }
-
-.arrowLFT {
-  position: absolute;
-  margin-right: 85vw; }
-
-.arrowRGT {
-  position: absolute;
-  margin-left: 85vw; }
 
 .gear_block {
   margin-bottom: 1.5625rem; }
@@ -1000,20 +1005,17 @@ img {
   @media screen and (max-width: 768px) {
     .product__features-item {
       width: 50%;
-      justify-content: space-between;
-      text-align: center;
       margin-right: 0.625rem; } }
   @media screen and (max-width: 480px) {
     .product__features-item {
       width: 50%;
-      justify-content: space-between;
-      text-align: center;
       margin-right: 0.625rem; } }
 
 .prod__feature-descr {
   font-weight: 700;
   font-size: 18px;
-  line-height: 21px; }
+  line-height: 21px;
+  white-space: nowrap; }
 
 .product__order {
   display: flex;
@@ -1025,20 +1027,6 @@ img {
   line-height: 60px;
   text-transform: uppercase;
   margin-right: 0.8125rem; }
-
-.arrow {
-  display: block; }
-  @media screen and (max-width: 768px) {
-    .arrow {
-      margin-top: -70%; } }
-  @media screen and (max-width: 480px) {
-    .arrow {
-      margin-top: -80%; } }
-
-.arrow__svg {
-  display: block;
-  width: 0.9375rem;
-  height: 1.8125rem; }
 
 .gear_block {
   display: flex;

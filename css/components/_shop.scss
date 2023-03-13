@@ -20,6 +20,7 @@
     height: 100%;
     display: flex;
     align-items: center;
+    justify-content: center;
 
     &:after {
         content: url("../images/Rectangle-shop.jpg");
@@ -44,6 +45,19 @@
         flex-direction: column;
     }
 
+}
+
+.arrows {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+}
+
+.arrow__svg {
+    display: block;
+    width: rem(15px);
+    height: rem(29px);
 }
 
 .shop__image {
@@ -85,16 +99,6 @@
         width: 100%;
         align-items: center;
     } 
-}
-
-.arrowLFT {
-    position: absolute;
-    margin-right: 85vw;
-}
-
-.arrowRGT {
-    position: absolute;
-    margin-left: 85vw;
 }
 
 .gear_block {
@@ -152,14 +156,10 @@
 
     @include tablets {
         width: 50%;
-        justify-content: space-between;
-        text-align: center;
         margin-right: rem(10px);
     }
     @include phones {
         width: 50%;
-        justify-content: space-between;
-        text-align: center;
         margin-right: rem(10px);
     }
 }
@@ -168,6 +168,7 @@
     font-weight: 700;
     font-size: 18px;
     line-height: 21px;
+    white-space: nowrap;
 }
 
 .product__order{
@@ -181,24 +182,6 @@
     line-height: 60px;
     text-transform: uppercase;
     margin-right: rem(13px);
-}
-
-.arrow {
-    display: block;
-
-    @include tablets {
-        margin-top: -70%;
-    }    
-
-    @include phones {
-        margin-top: -80%;
-    } 
-}
-
-.arrow__svg {
-    display: block;
-    width: rem(15px);
-    height: rem(29px);
 }
 
 .gear_block {

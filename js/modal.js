@@ -11,3 +11,11 @@ closeBtn.addEventListener("click", e => {
   e.preventDefault();
   modal.style.display = "none";
 })
+
+const modalLink = e => {
+  if (e.target.matches('#modal__link')) {
+    modal.style.display = "none";
+  }
+}
+
+document.addEventListener('click', modalLink);

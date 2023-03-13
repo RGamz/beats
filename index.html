@@ -163,21 +163,24 @@
          <section class="section shop">
             <div class="shop__container">
                <div class="shop__wrapper">
-                  <a href="#" class="arrow arrowLFT" id="arrLeft">
-                     <svg class="arrow__svg">
-                        <use xlink:href="./css/components/sprite.svg#arrLeft"></use>
-                     </svg>
-                  </a>
+
+                  <div class="arrows">
+                     <a href="#" class="arrow" id="arrLeft">
+                        <svg class="arrow__svg">
+                           <use xlink:href="./css/components/sprite.svg#arrLeft"></use>
+                        </svg>
+                     </a>
+                     <a href="#" class="arrow" id="arrRight">
+                        <svg class="arrow__svg">
+                           <use xlink:href="./css/components/sprite.svg#arrRight"></use>
+                        </svg>
+                     </a>
+                  </div>
+                  
                   
                   <section class="shop__image">
                      <img src="./images/shop-prd1.png" alt="product1" class="shop__image-img">
                   </section>
-               
-                  <a href="#" class="arrow arrowRGT" id="arrRight">
-                     <svg class="arrow__svg">
-                        <use xlink:href="./css/components/sprite.svg#arrRight"></use>
-                     </svg>
-                  </a>
                
                   <section class="shop__description">
                
@@ -525,28 +528,31 @@
       <nav class="modal__nav">
          <ul class="modal__list">
             <li class="modal__item">
-               <a href="#" class="modal__link">О нас</a>
+               <a href="#" class="modal__link" id="modal__link">О нас</a>
             </li>
             <li class="modal__item">
-               <a href="#" class="modal__link">Наушники</a>
+               <a href="#" class="modal__link" id="modal__link">Наушники</a>
             </li>
             <li class="modal__item">
-               <a href="#" class="modal__link">Команда</a>
+               <a href="#" class="modal__link" id="modal__link">Команда</a>
             </li>
             <li class="modal__item">
-               <a href="#" class="modal__link">Цены</a>
+               <a href="#" class="modal__link" id="modal__link">Цены</a>
             </li>
             <li class="modal__item">
-               <a href="#" class="modal__link">Отзывы</a>
+               <a href="#" class="modal__link" id="modal__link">Отзывы</a>
             </li>
             <li class="modal__item">
-               <a href="#" class="modal__link">Как мы работаем</a>
-            </li><li class="modal__item">
-               <a href="#" class="modal__link">Контакты</a>
+               <a href="#" class="modal__link" id="modal__link">Как мы работаем</a>
+            </li>
+            <li class="modal__item">
+               <a href="#" class="modal__link" id="modal__link">Контакты</a>
             </li>
          </ul>
       </nav>
    </div>
+
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
    <script src="./js/modal.js"></script>
    <script src="./js/dropdown.js"></script>

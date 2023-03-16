@@ -14,11 +14,40 @@
 
 .team__header {
     margin-bottom: rem(53px);
+
+    @include tablets {
+        margin-bottom: rem(33px);
+    }
+
+    @include phones {
+        margin-bottom: rem(33px);
+    }
 }
 
 .team__list {
     display: flex;
     flex-direction: row;
+
+    @include tablets {
+        display: none;
+    }
+
+    @include phones {
+        display: none;
+    }
+}
+
+.team__list-mobile {
+    display: none;
+    flex-direction: column;
+
+    @include tablets {
+        display: flex;
+    }
+
+    @include phones {
+        display: flex;
+    }
 }
 
 .team__item {
@@ -29,6 +58,16 @@
     margin-right: rem(20px);
 
     &:last-child {
+        margin-right: 0;
+    }
+
+    @include tablets {
+        margin-bottom: rem(16px);
+        margin-right: 0;
+    }
+
+    @include phones {
+        margin-bottom: rem(16px);
         margin-right: 0;
     }
 }
@@ -42,10 +81,26 @@
     height: rem(8px);
 }
 
+.arrDown {
+    display: inline;
+}
+
+.arrUp {
+    display: none;
+}
+
 .team__name-section {
     display: inline-flex;
     align-items: center;
     margin-bottom: rem(11px);
+
+    @include tablets {
+        align-items: baseline;
+    }
+
+    @include phones {
+        align-items: baseline;
+    }
 }
 
 .team__name {
@@ -53,6 +108,14 @@
     font-size: rem(18px);
     line-height: rem(21px);
     margin-right: rem(5px);
+
+    @include tablets {
+        margin-bottom: rem(15px);
+    }
+
+    @include phones {
+        margin-bottom: rem(15px);
+    }
 }
 
 .team__dropdown {
@@ -62,6 +125,18 @@
 
 .team__position {
     margin-bottom: rem(4px);
+
+    @include tablets {
+        font-weight: 700;
+        font-size: rem(18px);
+        line-height: rem(21px);
+    }
+
+    @include phones {
+        font-weight: 700;
+        font-size: rem(18px);
+        line-height: rem(21px);
+    }
 }
 
 .team__descr {

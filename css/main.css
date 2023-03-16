@@ -1139,10 +1139,32 @@ body {
 
 .team__header {
   margin-bottom: 3.3125rem; }
+  @media screen and (max-width: 768px) {
+    .team__header {
+      margin-bottom: 2.0625rem; } }
+  @media screen and (max-width: 480px) {
+    .team__header {
+      margin-bottom: 2.0625rem; } }
 
 .team__list {
   display: flex;
   flex-direction: row; }
+  @media screen and (max-width: 768px) {
+    .team__list {
+      display: none; } }
+  @media screen and (max-width: 480px) {
+    .team__list {
+      display: none; } }
+
+.team__list-mobile {
+  display: none;
+  flex-direction: column; }
+  @media screen and (max-width: 768px) {
+    .team__list-mobile {
+      display: flex; } }
+  @media screen and (max-width: 480px) {
+    .team__list-mobile {
+      display: flex; } }
 
 .team__item {
   display: flex;
@@ -1152,6 +1174,14 @@ body {
   margin-right: 1.25rem; }
   .team__item:last-child {
     margin-right: 0; }
+  @media screen and (max-width: 768px) {
+    .team__item {
+      margin-bottom: 1rem;
+      margin-right: 0; } }
+  @media screen and (max-width: 480px) {
+    .team__item {
+      margin-bottom: 1rem;
+      margin-right: 0; } }
 
 .team__item-img {
   margin-bottom: 3.25rem; }
@@ -1160,16 +1190,34 @@ body {
   width: 0.5rem;
   height: 0.5rem; }
 
+.arrDown {
+  display: inline; }
+
+.arrUp {
+  display: none; }
+
 .team__name-section {
   display: inline-flex;
   align-items: center;
   margin-bottom: 0.6875rem; }
+  @media screen and (max-width: 768px) {
+    .team__name-section {
+      align-items: baseline; } }
+  @media screen and (max-width: 480px) {
+    .team__name-section {
+      align-items: baseline; } }
 
 .team__name {
   font-weight: 700;
   font-size: 1.125rem;
   line-height: 1.3125rem;
   margin-right: 0.3125rem; }
+  @media screen and (max-width: 768px) {
+    .team__name {
+      margin-bottom: 0.9375rem; } }
+  @media screen and (max-width: 480px) {
+    .team__name {
+      margin-bottom: 0.9375rem; } }
 
 .team__dropdown {
   height: 0;
@@ -1177,6 +1225,16 @@ body {
 
 .team__position {
   margin-bottom: 0.25rem; }
+  @media screen and (max-width: 768px) {
+    .team__position {
+      font-weight: 700;
+      font-size: 1.125rem;
+      line-height: 1.3125rem; } }
+  @media screen and (max-width: 480px) {
+    .team__position {
+      font-weight: 700;
+      font-size: 1.125rem;
+      line-height: 1.3125rem; } }
 
 .team__descr {
   color: #666666; }

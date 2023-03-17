@@ -56,6 +56,7 @@
     align-items: center;
     width: rem(220px);
     margin-right: rem(20px);
+    position: relative;
 
     &:last-child {
         margin-right: 0;
@@ -74,6 +75,14 @@
 
 .team__item-img {
     margin-bottom: rem(52px);
+
+    @include tablets {
+        margin-bottom: rem(21px);
+    }
+
+    @include phones {
+        margin-bottom: rem(21px);
+    }
 }
 
 .triangle {
@@ -81,11 +90,11 @@
     height: rem(8px);
 }
 
-.arrDown {
+.triangle__down {
     display: inline;
 }
 
-.arrUp {
+.triangle__up {
     display: none;
 }
 
@@ -119,8 +128,23 @@
 }
 
 .team__dropdown {
-    height: 0;
+    position: absolute;
+    top: 100%;
     overflow: hidden;
+    height: 0;
+    transition: height .3s;
+
+    @include tablets {
+        position: relative;
+    }
+
+    @include phones {
+        position: relative;
+    }
+}
+
+.team__dropdown-wrapper {
+    display: block;
 }
 
 .team__position {

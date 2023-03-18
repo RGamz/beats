@@ -778,6 +778,9 @@ img {
       text-align: center;
       margin-bottom: 2rem; } }
 
+.input-error {
+  border-color: #E01F3D; }
+
 .fixed-menu {
   position: fixed;
   top: 40%;

@@ -8,5 +8,6 @@ $(pagerItem).on('click', e => {
  
     let reviewBlock = $('.reviews__block');
     $(reviewBlock).removeClass('reviews__block-active');
+    
     $(reviewBlock).eq(pagerNdx).addClass('reviews__block-active');
 });

@@ -16,7 +16,7 @@
    <div class="wrapper">
       <div class="maincontent">
 
-         <section class="hero">
+         <section class="hero" id="hero">
             <div class="container hero__container">
 
                <header class="header">
@@ -88,7 +88,7 @@
             </div>
          </section>
 
-         <section class="section section__why">
+         <section class="section section__why" id="why">
 
             <div class="why__wrapper">
 
@@ -154,7 +154,7 @@
 
          </section>
 
-         <section class="section shop">
+         <section class="section shop" id="shop">
             <div class="shop__container">
                <div class="arrows">
                   <a href="#" class="arrow arrLeft">
@@ -347,7 +347,7 @@
             </div>
          </section>
 
-         <section class="section team">
+         <section class="section team" id="team">
             <div class="team__container">
                <div class="team__wrapper">
 
@@ -593,7 +593,7 @@
             </div>
          </section>
 
-         <section class="section section__reviews">
+         <section class="section section__reviews" id="reviews">
 
             <div class="reviews__wrapper">
 
@@ -659,7 +659,7 @@
 
          </section>
 
-         <section class="section section__forms">
+         <section class="section section__forms" id="forms__sec">
 
             <div class="forms__wrapper">
 
@@ -669,15 +669,16 @@
 
                <div class="section__content">
                   <form class="form">
+                     <input type="hidden" name="to" value="mail@mail.com">
                      <div class="form__col">
                         <div class="form__row">
                            <label class="form__block">
-                              <div class="form__title">Имя</div>
-                              <input type="text" class="form__input">
+                              <div class="form__title" >Имя</div>
+                              <input type="text" name="name" class="form__input" required>
                            </label>
                            <label class="form__block">
                               <div class="form__title">Телефон</div>
-                              <input type="text" class="form__input">
+                              <input type="text" name="phone" class="form__input" required>
                            </label>
                         </div>
                         <div class="form__row">
@@ -709,7 +710,7 @@
                         <div class="form__row">
                            <label class="form__block">
                               <div class="form__title">Коммментарий</div>
-                              <textarea class="form__input form__input--textarea"></textarea>
+                              <textarea class="form__input form__input--textarea" name="comment" required></textarea>
                            </label>
                         </div>
                         <div class="form__controls">
@@ -743,7 +744,7 @@
 
          </section>
 
-         <section class="section__footer">
+         <section class="section__footer" id="footer">
 
             <section class="section__map">
                <img src="./images/map.png" alt="map" class="map-img">
@@ -833,31 +834,25 @@
 
       <ul class="fixed-menu__list">
          <li class="fixed-menu__item fixed-menu__item--active">
-            <a href="#" class="fixed-menu__link"></a>
+            <a href="#hero" class="fixed-menu__link"></a>
          </li>
          <li class="fixed-menu__item">
-            <a href="#" class="fixed-menu__link"></a>
+            <a href="#why" class="fixed-menu__link"></a>
          </li>
          <li class="fixed-menu__item">
-            <a href="#" class="fixed-menu__link"></a>
+            <a href="#shop" class="fixed-menu__link"></a>
          </li>
          <li class="fixed-menu__item">
-            <a href="#" class="fixed-menu__link"></a>
+            <a href="#team" class="fixed-menu__link"></a>
          </li>
          <li class="fixed-menu__item">
-            <a href="#" class="fixed-menu__link"></a>
+            <a href="#reviews" class="fixed-menu__link"></a>
          </li>
          <li class="fixed-menu__item">
-            <a href="#" class="fixed-menu__link"></a>
+            <a href="#forms__sec" class="fixed-menu__link"></a>
          </li>
          <li class="fixed-menu__item">
-            <a href="#" class="fixed-menu__link"></a>
-         </li>
-         <li class="fixed-menu__item">
-            <a href="#" class="fixed-menu__link"></a>
-         </li>
-         <li class="fixed-menu__item">
-            <a href="#" class="fixed-menu__link"></a>
+            <a href="#footer" class="fixed-menu__link"></a>
          </li>
       </ul>
    </nav>
@@ -904,6 +899,8 @@
    <script src="./js/accord.js"></script>
    <script src="./js/slider.js"></script>
    <script src="./js/reviewPager.js"></script>
+   <script src="./js/form.js"></script>
+   <script src="./js/fixed-menu.js"></script>
    
 </body>
 

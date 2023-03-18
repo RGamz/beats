@@ -1,7 +1,7 @@
 
 const slider = $(".shop__slides").bxSlider({
     pager:false,
-    wrapperClass:'slider__class',
+    wrapperClass:'shop__wrapper',
     controls:false,
 });
 

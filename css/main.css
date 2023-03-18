@@ -521,19 +521,22 @@ img {
       margin-bottom: 0.9375rem; } }
 
 .reviews__block {
+  display: none; }
+
+.reviews__block-active {
   padding: 2.1875rem 2.625rem;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   text-align: left; }
   @media screen and (max-width: 768px) {
-    .reviews__block {
+    .reviews__block-active {
       flex-direction: column;
       text-align: center;
       justify-content: center;
       align-items: center; } }
   @media screen and (max-width: 480px) {
-    .reviews__block {
+    .reviews__block-active {
       flex-direction: column;
       text-align: center;
       justify-content: center;
@@ -899,7 +902,7 @@ img {
     content: url("../images/Rectangle-shop.jpg");
     position: absolute;
     right: 5%;
-    bottom: -1.5rem; }
+    bottom: -4.7rem; }
 
 .arrows {
   position: absolute;
@@ -910,8 +913,8 @@ img {
 
 .arrow__svg {
   display: block;
-  width: 0.9375rem;
-  height: 1.8125rem; }
+  width: 2.1875rem;
+  height: 3.0625rem; }
 
 .shop__wrapper {
   display: flex;

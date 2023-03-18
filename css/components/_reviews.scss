@@ -49,6 +49,10 @@
 }
 
 .reviews__block {
+    display: none;
+}
+
+.reviews__block-active {
     padding: 2.1875rem 2.625rem;
     display: flex;
     flex-direction: row;

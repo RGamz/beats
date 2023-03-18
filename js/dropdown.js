@@ -16,8 +16,6 @@ gearBlock.addEventListener("mouseover", e => {
     })
 })
 
-gearBlock.addEventListener("mouseleave", e => {
-    drop.style.display = "none";
-})
+
 
 

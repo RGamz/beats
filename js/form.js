@@ -1,3 +1,16 @@
+const validateFields = (form, fieldArray) => {
+    fieldArray.forEach((field) => {
+        field.removeClass("input-error");
+        if(field.val().trim() == "") {
+            field.addClass("input-error");
+        }
+    });
+
+    const errorFields = form.find(".input-error");
+
+    return errorFields.length  == 0;
+}
+
 $('.form').submit(e => {
     e.preventDefault();
 
@@ -7,27 +20,36 @@ $('.form').submit(e => {
     const comment = form.find("[name='comment']")
     const to = form.find("[name='to']")
 
-    $.ajax({
-        url: "https://webdev-api.loftschool.com/sendmail",
-        method: "POST",
-        data: {
-            name: name.val(),
-            phone: phone.val(),
-            comment: comment.val(),
-            to: to.val()
-        }
-    })
+    const modal = $("#modal__form")
+    const content = modal.find(".modal__wrapper-form")
 
-    // $.fancybox.open({
-    //     src: "#modal",
-    //     type: "inline"
+    modal.removeClass("error-modal")
 
-    // })
+    const isValid = validateFields(form, [name,phone,comment,to]);
 
-})
+    if(isValid) {
+        $.ajax({
+            url: "https://webdev-api.loftschool.com/sendmail",
+            method: "POST",
+            data: {
+                name: name.val(),
+                phone: phone.val(),
+                comment: comment.val(),
+                to: to.val()
+            },
+            success:data => {
+                content.text(data.message)
+                
+                modal.style.display = "flex";
+            },
+            error: date => {
+                const message = data.responseJSON.message;
+                content.text(message);
+                modal.addClass("error-modal")
 
-// $('.app-submit-btn').click(e=> {
-//     e.preventDefault();
+                modal.style.display = "flex";
+            }
+        })
+    }
 
-//     $.fancybox.close();
-// })
+});

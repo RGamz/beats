@@ -668,17 +668,17 @@
                </div>
 
                <div class="section__content">
-                  <form class="form">
+                  <form class="form" id="#myForm">
                      <input type="hidden" name="to" value="mail@mail.com">
                      <div class="form__col">
                         <div class="form__row">
                            <label class="form__block">
                               <div class="form__title" >Имя</div>
-                              <input type="text" name="name" class="form__input" required>
+                              <input type="text" name="name" class="form__input" >
                            </label>
                            <label class="form__block">
                               <div class="form__title">Телефон</div>
-                              <input type="text" name="phone" class="form__input" required>
+                              <input type="text" name="phone" class="form__input" >
                            </label>
                         </div>
                         <div class="form__row">
@@ -710,7 +710,7 @@
                         <div class="form__row">
                            <label class="form__block">
                               <div class="form__title">Коммментарий</div>
-                              <textarea class="form__input form__input--textarea" name="comment" required></textarea>
+                              <textarea class="form__input form__input--textarea" name="comment" ></textarea>
                            </label>
                         </div>
                         <div class="form__controls">
@@ -733,7 +733,7 @@
                            </label>         
                         </div>
                         <div class="form__buttons">
-                           <input type="submit" value="Заказать" class="btn">
+                           <input type="submit" value="Заказать" class="btn" id="#sendButton">
                            <input type="reset" value="Очистить" class="btn btn__transparent">
                         </div>
                      </div>
@@ -891,6 +891,13 @@
       </nav>
    </div>
 
+   <div class="section__modal section__modal-form" id="modal__form">
+      <div class="modal__wrapper-form">
+         Сообщение отправлено
+      </div>
+      <a href="#" class="close__button" id="closeBtn__form">Закрыть</a>
+   </div>
+
    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
 
@@ -901,6 +908,7 @@
    <script src="./js/reviewPager.js"></script>
    <script src="./js/form.js"></script>
    <script src="./js/fixed-menu.js"></script>
+   <script src="./js/modal-form.js"></script>
    
 </body>
 

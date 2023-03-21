@@ -1,0 +1,38 @@
+.colors__background-img {
+    height: 100%;
+    width: auto;
+}
+
+.slide__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.slide__item {
+    width: rem(102px);
+    height: 100vh;
+}
+
+.slide__item-grey {
+    background: #999999;
+}
+
+.slide__item-black {
+    background: #151515;
+}
+
+.slide__item-red {
+    background: #E01F3C;
+}
+
+.slide__text {
+    width: rem(43px);
+    font-family: 'Alegreya Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: rem(36px);
+    line-height: rem(43px);
+    color: #FFFFFF;
+    transform: rotate(-90deg);
+}

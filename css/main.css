@@ -1268,18 +1268,36 @@ body {
 .team__descr {
   color: #666666; }
 
-.colors__background-img {
-  height: 100%;
-  width: auto; }
+.section__colors {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background: url("../../images/colors.jpg") left 0 top 0/contain no-repeat;
+  background-size: auto 100%; }
+
+.colors__wrapper {
+  display: flex;
+  flex-direction: row; }
+
+.colors__header {
+  color: #FFFFFF; }
 
 .slide__list {
   display: flex;
   flex-direction: row;
-  justify-content: flex-end; }
+  justify-content: flex-end;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0; }
 
 .slide__item {
   width: 6.375rem;
-  height: 100vh; }
+  height: 100vh;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: 2.125rem; }
 
 .slide__item-grey {
   background: #999999; }
@@ -1290,7 +1308,10 @@ body {
 .slide__item-red {
   background: #E01F3C; }
 
-.slide__text {
+.slide__button {
+  text-decoration: none; }
+
+.slide__header {
   width: 2.6875rem;
   font-family: 'Alegreya Sans';
   font-style: normal;
@@ -1298,6 +1319,20 @@ body {
   font-size: 2.25rem;
   line-height: 2.6875rem;
   color: #FFFFFF;
-  transform: rotate(-90deg); }
+  writing-mode: tb-rl;
+  transform: rotate(-180deg); }
+
+.slide__item-content {
+  position: relative;
+  overflow: hidden;
+  width: 0;
+  transition: width .7s; }
+
+.slide__item-text {
+  position: absolute;
+  text-align: left;
+  top: 1.9375rem;
+  left: 2.375rem;
+  right: 3.3125rem; }
 
 /*# sourceMappingURL=main.css.map */

@@ -86,3 +86,18 @@
     color: #FFFFFF;
     padding: rem(32px);
 }
+
+.close__button-color {
+    position: absolute;
+    display: block;
+    top: rem(22px);
+    right: rem(22px);
+    width: rem(20px);
+    height: rem(20px);
+}
+
+.close__button-svg-clr {
+    display: block;
+    width: rem(20px);
+    height: rem(20px);
+}

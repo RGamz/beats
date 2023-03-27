@@ -604,7 +604,12 @@
                         <a href="#" class="slide__button slide__button-grey">
                            <div class="slide__header">«Атласное серебро»</div>
                         </a>
-                        <div class="slide__item-content slide__item-content_active">
+                        <div class="slide__item-content slide__item-content_active" id="modalC">
+                           <a href="#" class="close__button-color" id="closeBtnClr">
+                              <svg class="close__button-svg-clr">
+                                 <use xlink:href="./css/components/sprite.svg#x"></use>
+                              </svg>
+                           </a>
                            <div class="slide__item-text">
                               Наушники Beats Solo3 могут работать до 40 часов без подзарядки, чтобы вы могли пользоваться ими каждый день. 5‑минутной зарядки Fast Fuel хватит ещё на 3 часа воспроизведения. Фирменное звучание Beats в наушниках с технологией Bluetooth класса 1 будет сопровождать вас повсюду — куда бы вы ни отправились. 
 Расположение чашек с мягкими амбушюрами можно регулировать — вы сможете носить их целый день.
@@ -615,7 +620,12 @@
                         <a href="#" class="slide__button slide__button-black">
                            <div class="slide__header">«Чёрный матовый»</div>
                         </a>
-                        <div class="slide__item-content ">
+                        <div class="slide__item-content " id="modalC">
+                           <a href="#" class="close__button-color" id="closeBtnClr">
+                              <svg class="close__button-svg-clr">
+                                 <use xlink:href="./css/components/sprite.svg#x"></use>
+                              </svg>
+                           </a>
                            <div class="slide__item-text">
                               Наушники Beats Solo3 могут работать до 40 часов без подзарядки, чтобы вы могли пользоваться ими каждый день. 5‑минутной зарядки Fast Fuel хватит ещё на 3 часа воспроизведения. Фирменное звучание Beats в наушниках с технологией Bluetooth класса 1 будет сопровождать вас повсюду — куда бы вы ни отправились. 
 Расположение чашек с мягкими амбушюрами можно регулировать — вы сможете носить их целый день.
@@ -626,7 +636,12 @@
                         <a href="#" class="slide__button slide__button-red">
                            <div class="slide__header">«Красный цитрус»</div>
                         </a>
-                        <div class="slide__item-content ">
+                        <div class="slide__item-content " id="modalC">
+                           <a href="#" class="close__button-color" id="closeBtnClr">
+                              <svg class="close__button-svg-clr">
+                                 <use xlink:href="./css/components/sprite.svg#x"></use>
+                              </svg>
+                           </a>
                            <div class="slide__item-text">
                               Наушники Beats Solo3 могут работать до 40 часов без подзарядки, чтобы вы могли пользоваться ими каждый день. 5‑минутной зарядки Fast Fuel хватит ещё на 3 часа воспроизведения. Фирменное звучание Beats в наушниках с технологией Bluetooth класса 1 будет сопровождать вас повсюду — куда бы вы ни отправились. 
 Расположение чашек с мягкими амбушюрами можно регулировать — вы сможете носить их целый день.
@@ -703,6 +718,42 @@
 
             </div>
 
+         </section>
+
+         <section class="section section__player" id="player">
+            <div class="container container__player">
+               <h2 class="player__header">как мы работаем</h2>
+               <div class="player-section__container">
+                  <div class="player player-active">
+                     <div class="player__wrapper">
+                        <div id="yt-player" class="player__elem">
+                           <!-- <svg class="player__start-btn">
+                              <use xlink:href="./css/components/sprite.svg#play"></use>
+                           </svg> -->
+                        </div>
+                        <div class="player__splash">
+                           <img src="./images/splash.png" alt="" class="player__splash-img">
+                        </div>
+                     </div>
+                     <div class="player__controls">
+                        <a class="player__start">
+                           <svg class="player__start-btn">
+                              <use xlink:href="./css/components/sprite.svg#play"></use>
+                           </svg>
+                        </a>
+                        <div class="player__playback">
+                           <a class="player__playback-button">
+                              
+                           </a>
+                        </div>
+                        <div class="player__duration">
+                           <span class="player__duration-completed">0:00</span>
+                           <span class="player__duration-estimate">0:00</span>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
          </section>
 
          <section class="section section__forms" id="forms__sec">
@@ -792,8 +843,8 @@
 
          <section class="section__footer" id="footer">
 
-            <section class="section__map">
-               <img src="./images/map.png" alt="map" class="map-img">
+            <section class="section__map" id="map">
+               <!-- <img src="./images/map.png" alt="map" class="map-img"> -->
             </section>
 
             <footer class="footer">
@@ -898,6 +949,9 @@
             <a href="#reviews" class="fixed-menu__link"></a>
          </li>
          <li class="fixed-menu__item">
+            <a href="#player" class="fixed-menu__link"></a>
+         </li>
+         <li class="fixed-menu__item">
             <a href="#forms__sec" class="fixed-menu__link"></a>
          </li>
          <li class="fixed-menu__item">
@@ -959,6 +1013,11 @@
    <script src="./js/fixed-menu.js"></script>
    <script src="./js/modal-form.js"></script>
    <script src="./js/colors-accord.js"></script>
+   <script src="https://www.youtube.com/iframe_api"></script>
+   <script src="./scripts/player.js"></script>
+   <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript">
+   </script>
+   <script src="./scripts/map.js"></script>
    
 </body>
 

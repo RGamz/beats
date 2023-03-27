@@ -6,9 +6,9 @@ const openColor = item => {
 
 const closeEveryColor = container => {
     const items = container.find(".slide__item");
-    const content = items.find(".slide__item-content")
+    const content = items.find(".slide__item-content");
 
-    content.removeClass("slide__item-content_active")
+    content.removeClass("slide__item-content_active");
 }
 
 $(".slide__button").click(e => {
@@ -18,6 +18,7 @@ $(".slide__button").click(e => {
     const openedColor = item.hasClass("slide__item-content_active")
     const elemContainer = $this.closest(".slide__list");
 
+
     if (openedColor) {
         closeEveryColor(elemContainer);
     } else {
@@ -26,5 +27,14 @@ $(".slide__button").click(e => {
     } 
 
 })
+
+const modalC = document.querySelector("#modalC");
+const closeBtnC = document.querySelector("#closeBtnClr");
+
+closeBtn.addEventListener("click", e => {
+    e.preventDefault();
+    modalC.removeClass("slide__item-content_active")
+})
+  
 
 

@@ -1,3 +1,12 @@
+// const measureWidth = item => {
+//     const screenWidth = $(window).width();
+//     const container = item.closest(".slide__list")
+//     const titleBlocks = container.find(".slide__button")
+//     const titleWidth = titleBlocks.width() * titleBlocks.length()
+    
+//     return screenWidth - titleWidth
+// }
+
 
 const openColor = item => {
     const hiddenColor = item.find(".slide__item-content");
@@ -31,7 +40,7 @@ $(".slide__button").click(e => {
 const modalC = document.querySelector("#modalC");
 const closeBtnC = document.querySelector("#closeBtnClr");
 
-closeBtn.addEventListener("click", e => {
+closeBtnC.addEventListener("click", e => {
     e.preventDefault();
     modalC.removeClass("slide__item-content_active")
 })

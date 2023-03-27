@@ -2,7 +2,7 @@
     position: relative;
     height: 100vh;
     width: 100%;
-    background: url("../../images/colors.jpg") left 0 top 0 /contain no-repeat;
+    background: url("../images/colors.jpg") left 0 top 0 /contain no-repeat;
     background-size: auto 100%;
 }
 
@@ -39,6 +39,14 @@
     flex-direction: column-reverse;
     align-items: center;
     padding-bottom: rem(34px);
+
+    @include tablets {
+        width: rem(92px);
+    }
+
+    @include phones {
+        width: rem(62px);
+    }
 }
 
 .slide__button-grey {

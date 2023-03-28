@@ -93,6 +93,15 @@
     text-align: left;
     color: #FFFFFF;
     padding: rem(32px);
+
+    @include tablets {
+        padding: rem(26px);
+    }
+
+    @include phones {
+        padding: rem(18px);
+        padding-top: rem(55px) ;
+    }
 }
 
 .close__button-color {
@@ -102,10 +111,19 @@
     right: rem(22px);
     width: rem(20px);
     height: rem(20px);
+
+    @include phones {
+        right: rem(32px);
+    }
 }
 
 .close__button-svg-clr {
     display: block;
     width: rem(20px);
     height: rem(20px);
+
+    @include phones {
+        width: rem(30px);
+        height: rem(30px);
+    }
 }

@@ -42,4 +42,9 @@ body {
     display: block;
     width: rem(20px);
     height: rem(20px);
+
+    @include phones {
+        width: rem(30px);
+        height: rem(30px);
+    }
 }

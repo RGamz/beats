@@ -212,3 +212,21 @@
 .error-modal {
     background-color: brown;
 }
+
+
+.close__button-form {
+    position: absolute;
+    display: block;
+    top: rem(42px);
+    right: 20%;
+    width: rem(20px);
+    height: rem(20px);
+
+    @include tablets {
+        right: 30%;
+    }
+
+    @include phones {
+        right: 40%;
+    }
+}

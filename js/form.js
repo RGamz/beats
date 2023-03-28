@@ -40,14 +40,18 @@ $('.form').submit(e => {
             success:data => {
                 content.text(data.message)
                 
-                modal.style.display = "flex";
+                modal.css({
+                    display:"flex",
+                })
             },
             error: date => {
                 const message = data.responseJSON.message;
                 content.text(message);
                 modal.addClass("error-modal")
 
-                modal.style.display = "flex";
+                modal.css({
+                    display:"flex",
+                })
             }
         })
     }

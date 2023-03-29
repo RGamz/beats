@@ -2244,14 +2244,25 @@ body {
   width: 41.375rem;
 }
 
+.player__wrapper {
+  display: block;
+}
+
 .player__splash {
   position: absolute;
-  width: 41.25rem;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: url("../images/splash.png");
+  cursor: pointer;
 }
 
 .player__controls {
   position: absolute;
   height: 2.1875rem;
+  left: 0;
+  right: 0;
   width: 41.25rem;
   background: #151515;
   bottom: 0;
@@ -2267,6 +2278,11 @@ body {
       -ms-flex-align: center;
           align-items: center;
   z-index: 1;
+}
+
+.player__start {
+  background: none;
+  border: none;
 }
 
 .player__start-btn {
@@ -2302,4 +2318,15 @@ body {
 
 .player-paused {
   display: none;
+}
+
+.player__wrapper {
+  position: relative;
+}
+
+.player__btn-container {
+  z-index: 10;
+  position: absolute;
+  display: block;
+  top: 0;
 }

@@ -27,18 +27,15 @@ function onYouTubeIframeAPIReady() {
   });
  }
 
-
-const playerContainer = $(".player");
- 
-let eventsInit = () => {
+ let eventsInit = () => {
   $(".player__start").click(e => {
     e.preventDefault();
   
-    if (playerContainer.hasClass("player-paused")) {
-      playerContainer.removeClass("player-paused");
+    if (playerContainer.hasClass("paused")) {
+      playerContainer.removeClass("paused");
       player.pauseVideo();
     } else {
-      playerContainer.addClass("player-paused");
+      playerContainer.addClass("paused");
       player.playVideo();
     }
   });

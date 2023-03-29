@@ -27,14 +27,25 @@
     width: rem(662px);
 }
 
+.player__wrapper {
+    display: block;
+}
+
 .player__splash {
     position: absolute;
-    width: rem(660px);
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: url("../images/splash.png");
+    cursor: pointer;
 }
 
 .player__controls {
     position: absolute;
     height: rem(35px);
+    left: 0;
+    right: 0;
     width: rem(660px);
     background: #151515;
     bottom: 0;
@@ -43,6 +54,11 @@
     flex-direction: row;
     align-items: center;
     z-index: 1;
+}
+
+.player__start {
+    background: none;
+    border: none;
 }
 
 .player__start-btn {
@@ -75,5 +91,16 @@
 
 .player-paused {
     display: none;
+}
+
+.player__wrapper {
+    position: relative;
+}
+
+.player__btn-container {
+    z-index: 10;
+    position: absolute;
+    display: block;
+    top: 0;
 }
 

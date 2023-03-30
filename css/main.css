@@ -2281,8 +2281,11 @@ body {
 }
 
 .player__start {
-  background: none;
-  border: none;
+  background: url("../images/play.png");
+}
+
+.player__paused {
+  background: url("../images/paused.png");
 }
 
 .player__start-btn {
@@ -2292,11 +2295,8 @@ body {
 }
 
 .player__pause-btn {
-  height: 20px;
-  width: 15px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  height: 18px;
+  width: 18px;
 }
 
 .pause__line {

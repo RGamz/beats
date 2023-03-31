@@ -29,10 +29,12 @@
 
 .player__wrapper {
     display: block;
+    // background: url("../images/playBig.png") center center /contain no-repeat;
 }
 
 .player__splash {
     position: absolute;
+    display: block;
     top: 0;
     right: 0;
     left: 0;
@@ -56,43 +58,21 @@
     z-index: 1;
 }
 
-.player__start {
-    background: url("../images/play.png");
-}
-
-.player__paused{
-    background: url("../images/paused.png");
-}
-
-.player__start-btn {
-    display: block;
+.player___btn {
     width: 20px;
     height: 20px;
 }
 
-.player__pause-btn{
-    height: 18px;
+.player__start {
+    background: url("../images/play.png") center center /contain no-repeat;
+    width: 13px;
+    height: 20px;
+}
+
+.player__paused{
+    background: url("../images/pause.png") center center /contain no-repeat;
     width: 18px;
-}
-
-.pause__line {
-    height: rem(20px);
-    width: rem(5px);
-    border-radius: 15%;
-    background-color: white;
-    margin-right: rem(5px);
-
-    &:last-child {
-        margin-right: 0;
-    }
-}
-
-.player-active {
-    display: flex;
-}
-
-.player-paused {
-    display: none;
+    height: 18px;
 }
 
 .player__wrapper {

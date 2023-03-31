@@ -2250,6 +2250,7 @@ body {
 
 .player__splash {
   position: absolute;
+  display: block;
   top: 0;
   right: 0;
   left: 0;
@@ -2280,44 +2281,21 @@ body {
   z-index: 1;
 }
 
-.player__start {
-  background: url("../images/play.png");
-}
-
-.player__paused {
-  background: url("../images/paused.png");
-}
-
-.player__start-btn {
-  display: block;
+.player___btn {
   width: 20px;
   height: 20px;
 }
 
-.player__pause-btn {
-  height: 18px;
+.player__start {
+  background: url("../images/play.png") center center/contain no-repeat;
+  width: 13px;
+  height: 20px;
+}
+
+.player__paused {
+  background: url("../images/pause.png") center center/contain no-repeat;
   width: 18px;
-}
-
-.pause__line {
-  height: 1.25rem;
-  width: 0.3125rem;
-  border-radius: 15%;
-  background-color: white;
-  margin-right: 0.3125rem;
-}
-.pause__line:last-child {
-  margin-right: 0;
-}
-
-.player-active {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.player-paused {
-  display: none;
+  height: 18px;
 }
 
 .player__wrapper {

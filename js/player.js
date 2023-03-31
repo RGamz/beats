@@ -6,6 +6,8 @@ firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
 
 let player;
+const playerContainer = $(".player__start");
+const playerSplash = $(".player__splash");
  
 function onYouTubeIframeAPIReady() {
   player = new YT.Player("yt-player", {
@@ -27,15 +29,26 @@ function onYouTubeIframeAPIReady() {
   });
  }
 
+
+
  let eventsInit = () => {
   $(".player__start").click(e => {
     e.preventDefault();
-  
-    if (playerContainer.hasClass("paused")) {
-      playerContainer.removeClass("paused");
+
+
+    if (playerContainer.hasClass("player__paused")) {
+      playerContainer.removeClass("player__paused");
+      playerSplash.css({
+        display:"block",
+    })
+      playerContainer.addClass("player__start");
       player.pauseVideo();
     } else {
-      playerContainer.addClass("paused");
+      playerContainer.removeClass("player__start");
+      playerSplash.css({
+        display:"none",
+    })
+      playerContainer.addClass("player__paused");
       player.playVideo();
     }
   });

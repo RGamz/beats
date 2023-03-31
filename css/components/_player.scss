@@ -59,9 +59,10 @@
     z-index: 1;
 }
 
-.player___btn {
+.player__strt {
     width: 20px;
     height: 20px;
+    padding: 0 5px 0 0;
 }
 
 .player__start {
@@ -94,16 +95,16 @@
 }
 
 .player__playback {
-    width: 70%;
+    width: 75%;
     height: 5px;
     background: url("../images/line.png") center center /contain no-repeat;
+    background-size: 500px 5px;
     border: none;
     position: relative;
 }
 
 .player__playback-button {
     border: none;
-    // height: 4px;
     background: #E01F3D;
     border-radius: 50px;
     width: 12px;

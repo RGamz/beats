@@ -87,3 +87,25 @@ function onYouTubeIframeAPIReady() {
  
 eventsInit();
 
+interval = setInterval(() => {
+  const completedSec = player.getCurrentTime();
+  const completedPercent = (completedSec / durationSec) * 100;
+
+  $(".player__playback").click(e => {
+    const bar = $(e.currentTarget);
+    const clickedPosition = e.originalEvent.layerX;
+    
+    const newButtonPositionPercent = (clickedPosition / bar.width()) * 100;
+    const newPlaybackPositionSec =
+      (player.getDuration() / 100) * newButtonPositionPercent;
+    
+    $(".player__playback-button").css({
+      left: `${newButtonPositionPercent}%`
+    });
+    
+    player.seekTo(newPlaybackPositionSec);
+   });
+ 
+  $(".player__duration-completed").text(formatTime(completedSec));
+}, 1000);
+

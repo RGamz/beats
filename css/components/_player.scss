@@ -98,11 +98,20 @@
     height: 5px;
     background: url("../images/line.png") center center /contain no-repeat;
     border: none;
+    position: relative;
 }
 
 .player__playback-button {
     border: none;
-    height: 4px;
-    background: none;
+    // height: 4px;
+    background: #E01F3D;
+    border-radius: 50px;
+    width: 12px;
+    height: 12px;
+    padding: 0;
+    position: absolute;
+    top: 3px;
+    transform: translate(-50%,-50%);
+    left: 0;
 }
 

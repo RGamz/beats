@@ -67,16 +67,16 @@ $(window).on("keydown", e => {
   
 })
 
-$(".wrapper").on("touchmove", e => e.preventDefault());
+// $(".wrapper").on("touchmove", e => e.preventDefault());
 
-$("body").swipe({
-    swipe: function(event,direction) {
-        const scroller = viewportScroller();
-        let scrollDirection = "";
-        if(direction == "up") scrollDirection = "next";
-        if(direction == "down") scrollDirection = "prev";
+// $("body").swipe({
+//     swipe: function(event,direction) {
+//         const scroller = viewportScroller();
+//         let scrollDirection = "";
+//         if(direction == "up") scrollDirection = "next";
+//         if(direction == "down") scrollDirection = "prev";
         
-        scroller[scrollDirection]()
-    },
-})
+//         scroller[scrollDirection]()
+//     },
+// })
 

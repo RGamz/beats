@@ -89,6 +89,7 @@ eventsInit();
 
 interval = setInterval(() => {
   const completedSec = player.getCurrentTime();
+  const durationSec = player.getDuration();
   const completedPercent = (completedSec / durationSec) * 100;
 
   $(".player__playback-button").css({

@@ -1287,6 +1287,12 @@ img {
 .fixed-menu__item--active .fixed-menu__link::before {
   background: #E01F3D;
 }
+.fixed-menu__item--new .fixed-menu__link {
+  border-color: #E01F3D;
+}
+.fixed-menu__item--new .fixed-menu__link::before {
+  background: #E01F3D;
+}
 .fixed-menu__item:last-child {
   margin-bottom: 0;
 }

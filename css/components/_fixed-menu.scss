@@ -25,6 +25,16 @@
         }
     }
 
+    &--new {     
+        .fixed-menu__link {
+            border-color: #E01F3D;
+
+            &::before {
+                background: #E01F3D;
+            }
+        }
+    }
+
     &:last-child {
         margin-bottom: 0;
     }

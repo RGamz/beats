@@ -2255,10 +2255,6 @@ body {
   width: 41.25rem;
 }
 
-.player__wrapper {
-  display: block;
-}
-
 .player__splash {
   position: absolute;
   display: block;
@@ -2266,7 +2262,7 @@ body {
   right: 0;
   left: 0;
   bottom: 0;
-  background: url("../images/splash.png");
+  background: url("../images/splash.png") center center/contain no-repeat;
   cursor: pointer;
 }
 
@@ -2313,17 +2309,6 @@ body {
   width: 18px;
   height: 18px;
   border: none;
-}
-
-.player__wrapper {
-  position: relative;
-}
-
-.player__btn-container {
-  z-index: 10;
-  position: absolute;
-  display: block;
-  top: 0;
 }
 
 .player__duration {

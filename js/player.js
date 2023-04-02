@@ -1,8 +1,8 @@
-var tag = document.createElement('script');
+// var tag = document.createElement('script');
 
-tag.src = "https://www.youtube.com/iframe_api";
-var firstScriptTag = document.getElementsByTagName('script')[0];
-firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+// tag.src = "https://www.youtube.com/iframe_api";
+// var firstScriptTag = document.getElementsByTagName('script')[0];
+// firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
 
 let player;
@@ -22,9 +22,10 @@ const formatTime = timeSec => {
       return `${minutes} : ${seconds}`;
  };
 
- const durationSec = player.getDuration();
+
 
  const onPlayerReady = () => {
+  const durationSec = player.getDuration();
   let interval;
 
     $(".player__duration-estimate").text(formatTime(durationSec));
@@ -62,11 +63,9 @@ function onYouTubeIframeAPIReady() {
  }
 
 
-
  let eventsInit = () => {
   $(".player__start").click(e => {
     e.preventDefault();
-
 
     if (playerContainer.hasClass("player__paused")) {
       playerContainer.removeClass("player__paused");
@@ -79,7 +78,7 @@ function onYouTubeIframeAPIReady() {
       playerContainer.removeClass("player__start");
       playerSplash.css({
         display:"none",
-    })
+      })
       playerContainer.addClass("player__paused");
       player.playVideo();
     }
@@ -114,3 +113,5 @@ $(".player__playback").click(e => {
   
   player.seekTo(newPlaybackPositionSec);
  });
+
+

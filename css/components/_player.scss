@@ -27,10 +27,10 @@
     width: rem(660px);
 }
 
-.player__wrapper {
-    display: block;
-    // background: url("../images/playBig.png") center center /contain no-repeat;
-}
+// .player__wrapper {
+//     display: block;
+//     background: url("../images/playBig.png") center center /contain no-repeat;
+// }
 
 .player__splash {
     position: absolute;
@@ -39,7 +39,7 @@
     right: 0;
     left: 0;
     bottom: 0;
-    background: url("../images/splash.png");
+    background: url("../images/splash.png") center center /contain no-repeat;
     cursor: pointer;
 }
 
@@ -77,17 +77,6 @@
     width: 18px;
     height: 18px;
     border: none;
-}
-
-.player__wrapper {
-    position: relative;
-}
-
-.player__btn-container {
-    z-index: 10;
-    position: absolute;
-    display: block;
-    top: 0;
 }
 
 .player__duration {

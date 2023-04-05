@@ -16,7 +16,7 @@
    <div class="wrapper">
       <div class="maincontent">
 
-         <section class="hero" id="hero">
+         <section data-section-id="hero" class="hero" id="hero">
             <div class="container hero__container">
 
                <header class="header">
@@ -88,7 +88,7 @@
             </div>
          </section>
 
-         <section class="section section__why" id="why">
+         <section data-section-id="why" class="section section__why" id="why">
 
             <div class="why__wrapper">
 
@@ -154,7 +154,7 @@
 
          </section>
 
-         <section class="section shop" id="shop">
+         <section data-section-id="shop" class="section shop" id="shop">
             <div class="shop__container">
                <div class="arrows">
                   <a href="#" class="arrow arrLeft">
@@ -347,7 +347,7 @@
             </div>
          </section>
 
-         <section class="section team" id="team">
+         <section data-section-id="team" class="section team" id="team">
             <div class="team__container">
                <div class="team__wrapper">
 
@@ -593,7 +593,7 @@
             </div>
          </section>
 
-         <section class="section section__colors" id="colors">
+         <section data-section-id="colors" class="section section__colors" id="colors">
             <div class="colors__container">
                <div class="colors__wrapper">
 
@@ -654,7 +654,7 @@
             </div>
          </section>
 
-         <section class="section section__reviews" id="reviews">
+         <section data-section-id="reviews" class="section section__reviews" id="reviews">
 
             <div class="reviews__wrapper">
 
@@ -720,7 +720,7 @@
 
          </section>
 
-         <section class="section section__player" id="player">
+         <section data-section-id="player" class="section section__player" id="player">
             <div class="container__player">
               <h2 class="player__title">Как мы работаем</h2>
               <div class="player-section__container">
@@ -748,7 +748,7 @@
             </div>
          </section>
 
-         <section class="section section__forms" id="forms__sec">
+         <section data-section-id="forms_s" class="section section__forms" id="forms__sec">
 
             <div class="forms__wrapper">
 
@@ -833,7 +833,7 @@
 
          </section>
 
-         <section class="section__footer" id="footer">
+         <section data-section-id="footer" class="section__footer" id="footer">
 
             <section class="section__map" id="map">
             </section>
@@ -922,31 +922,31 @@
 
       <ul class="fixed-menu__list">
          <li class="fixed-menu__item fixed-menu__item--active">
-            <a href="#hero" class="fixed-menu__link"></a>
+            <a href="#hero" data-scroll-to="hero" class="fixed-menu__link"></a>
          </li>
          <li class="fixed-menu__item">
-            <a href="#why" class="fixed-menu__link"></a>
+            <a href="#why" data-scroll-to="why" class="fixed-menu__link"></a>
          </li>
          <li class="fixed-menu__item">
-            <a href="#shop" class="fixed-menu__link"></a>
+            <a href="#shop" data-scroll-to="shop" class="fixed-menu__link"></a>
          </li>
          <li class="fixed-menu__item">
-            <a href="#team" class="fixed-menu__link"></a>
+            <a href="#team" data-scroll-to="team" class="fixed-menu__link"></a>
          </li>
          <li class="fixed-menu__item">
-            <a href="#colors" class="fixed-menu__link"></a>
+            <a href="#colors" data-scroll-to="colors" class="fixed-menu__link"></a>
          </li>
          <li class="fixed-menu__item">
-            <a href="#reviews" class="fixed-menu__link"></a>
+            <a href="#reviews" data-scroll-to="reviews" class="fixed-menu__link"></a>
          </li>
          <li class="fixed-menu__item">
-            <a href="#player" class="fixed-menu__link"></a>
+            <a href="#player" data-scroll-to="player" class="fixed-menu__link"></a>
          </li>
          <li class="fixed-menu__item">
-            <a href="#forms__sec" class="fixed-menu__link"></a>
+            <a href="#forms__sec" data-scroll-to="forms_s" class="fixed-menu__link"></a>
          </li>
          <li class="fixed-menu__item">
-            <a href="#footer" class="fixed-menu__link"></a>
+            <a href="#footer" data-scroll-to="footer" class="fixed-menu__link"></a>
          </li>
       </ul>
    </nav>
@@ -980,6 +980,9 @@
             </li>
             <li class="modal__item">
                <a href="#forms__sec" class="modal__link" id="modal__link">Контакты</a>
+            </li>
+            <li class="modal__item">
+               <a href="#footer" class="modal__link" id="modal__link">Контакты</a>
             </li>
          </ul>
       </nav>
